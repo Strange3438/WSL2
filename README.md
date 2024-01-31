@@ -12,26 +12,26 @@ Enter the "wsl --install" command to install wsl2
 Windows 10 or 11 - Version 1903 or later, with Build 18362.1049 or later
 
 2. Enable the Virtual Machine Platform
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```
 
 3. Enable Virtual Machine Feature
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```
 
 4. Install wsl2
-wsl.exe --install
-To update "wsl.exe --update"
+```wsl.exe --install```
+To update ```wsl.exe --update```
 We could also install wsl2 through microsoft store
 Go to Microsoft Store and search for "Windows Subsystem for Linux"
 
 5. Set wsl2 as the default version
-wsl.exe --set-default-version 2
+```wsl.exe --set-default-version 2```
 
 6. Choose the linux distribution
-wsl.exe --list --online
+```wsl.exe --list --online```
 Install Kali Linux
-wsl.exe --install kali-linux
+```wsl.exe --install kali-linux```
 Set the default distribution to Kali Linux
-wsl.exe -d kali-linux
+```wsl.exe -d kali-linux```
 
 It is also available as an application
 Go to Microsoft Store and search for "Kali Linux"
@@ -40,7 +40,7 @@ Create a new Username and a Password
 You are ready to go with the Kali Linux WSL2
 
 Update all the packages
-sudo apt update && sudo apt upgrade -y
+```sudo apt update && sudo apt upgrade -y```
 
 For further documentation, visit https://learn.microsoft.com/en-us/windows/wsl/
 
@@ -58,20 +58,20 @@ Enhanced session mode: Similar to Hyper-V, uses RDP for a more feature rich expe
 * Fully compatible with WSLg
 
 Installing win-kex
-sudo apt install kali-win-kex -y
+```sudo apt install kali-win-kex -y```
 
 To start Win-Kex in window mode
-kex --win -s
+```kex --win -s```
 
 To start Win-Kex in Seamless mode
-kex --sl -s
+```kex --sl -s```
 
 To start Win-Kex in Enhanced Session Mode
-kex --esm --ip -s
+```kex --esm --ip -s```
 
 If there is any issue in the usage of Win-Kex 
 Remove the package and re-install it
-sudo apt remove kali-win-kex -y
-sudo apt install kali-win-kex -y
+```sudo apt remove kali-win-kex -y```
+```sudo apt install kali-win-kex -y```
 
 For further documentation, visit https://www.kali.org/docs/wsl/win-kex/
