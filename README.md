@@ -5,7 +5,8 @@ We could easily configure linux distributions and use them in parallel to Window
 Let's see how do we setup WSL2 for Windows
 
 Open Windows Powershell in Administrator mode
-Enter the "wsl --install" command to install wsl2
+Enter the below command to install wsl2 
+```wsl.exe --install```
 
 # For older versions
 1. Check requirements for running WSL 2
@@ -19,14 +20,15 @@ Windows 10 or 11 - Version 1903 or later, with Build 18362.1049 or later
 
 4. Install wsl2
 ```wsl.exe --install```
-To update ```wsl.exe --update```
+To update
+```wsl.exe --update```
 We could also install wsl2 through microsoft store
-Go to Microsoft Store and search for "Windows Subsystem for Linux"
+Go to Microsoft Store and search for ```Windows Subsystem for Linux```
 
-5. Set wsl2 as the default version
+6. Set wsl2 as the default version
 ```wsl.exe --set-default-version 2```
 
-6. Choose the linux distribution
+7. Choose the linux distribution
 ```wsl.exe --list --online```
 Install Kali Linux
 ```wsl.exe --install kali-linux```
@@ -48,14 +50,17 @@ For further documentation, visit https://learn.microsoft.com/en-us/windows/wsl/
 # For GUI
 Win-KeX provides a GUI desktop experience for Kali Linux in Windows Subsystem for Linux (WSL 2) with the following features:
 
-Window mode: Start a Kali Linux desktop in a dedicated window
-Seamless mode: Share the Windows desktop between Windows and Kali application and menus
-Enhanced session mode: Similar to Hyper-V, uses RDP for a more feature rich experience
-* Sound support
-* Shared clipboard for cut and paste support between Kali Linux and Windows
-* Root & unprivileged session support
-* Multi-session support: root window & non-privileged window & seamless sessions concurrently
-* Fully compatible with WSLg
+# Window mode
+Start a Kali Linux desktop in a dedicated window
+# Seamless mode
+Share the Windows desktop between Windows and Kali application and menus
+# Enhanced session mode
+Similar to Hyper-V, uses RDP for a more feature rich experience
+  * Sound support
+  * Shared clipboard for cut and paste support between Kali Linux and Windows
+  * Root & unprivileged session support
+  * Multi-session support: root window & non-privileged window & seamless sessions concurrently
+  * Fully compatible with WSLg
 
 Installing win-kex
 ```sudo apt install kali-win-kex -y```
